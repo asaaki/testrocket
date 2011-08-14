@@ -6,23 +6,26 @@
                                                    
 Testrocket is a super simple (as simple as it gets really) testing library for Ruby.
 
-It was initially developed for [this CodeBrawl competition](http://codebrawl.com/articles/contest-rundown-ruby-testing-libraries) and it won! People then asked me to release it 'for real' so here we are.
+It was initially developed for [this CodeBrawl competition](http://codebrawl.com/articles/contest-rundown-ruby-testing-libraries) and it won! People then asked me to release it 'for real' so here we are. | _peterc_
 
-To install:
+## Install
 
-    gem install testrocket
+**Notice** This is a forked version of the origin [testrocket](https://github.com/peterc/testrocket) gem!
+
+You have to install this fork by: `gem install aki-testrocket`
+
+In Gemfile: `gem "aki-testrocket"`
     
 As yet there are no useful bits and pieces for creating test files (look at the example, it's easy!) or Rake tasks. But it's all crazy simple. A few things may be added later on.
     
-Dependencies
-------------
+## Dependencies
 
 - Ruby 1.9
 - minitest/spec (part of MRI 1.9 stdlib)
 - Unix/Unix-like/POSIX system
 
-Example
--------
+
+## Example
 
     require 'testrocket'
     
@@ -47,8 +50,7 @@ Example
     # A description
     !-> { "use this for descriptive output and to separate your test parts" }
     
-Launcher Extension
-------------------
+## Launcher Extension
 
     require 'testrocket'
     require 'testrocket/launcher' # <-- has to be added manually!
@@ -86,8 +88,7 @@ _fire_ = something like "it" in other test suites
 
 The _fire_ blocks utilize the _description rocket_, so you don't have to do it in an extra step, it also adds a closing output line for each fire-block.
     
-Other Features
---------------
+## Other Features
 
 By default, output is written to STDOUT (as well as returned by the test expressions themselves). You can override where test output goes like so:
 
@@ -95,9 +96,8 @@ By default, output is written to STDOUT (as well as returned by the test express
 
 TestRocket.out also supports Logger instances.
 
-Authors
--------
+## Authors
 
-Initial concept and maintenance by Peter Cooper
+Initial concept and maintenance by [Peter Cooper](https://github.com/asaaki).
 
-Extra concepts and code by Christoph Grabo
+Extra concepts and code by [Christoph Grabo](https://github.com/peterc).
