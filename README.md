@@ -98,6 +98,6 @@ TestRocket.out also supports Logger instances.
 
 ## Authors
 
-Initial concept and maintenance by [Peter Cooper](https://github.com/asaaki).
+Initial concept and maintenance by [Peter Cooper](https://github.com/peterc).
 
-Extra concepts and code by [Christoph Grabo](https://github.com/peterc).
+Extra concepts and code by [Christoph Grabo](https://github.com/asaaki).
